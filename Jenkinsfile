@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Checout') {
+        stage('Checkout') {
             steps {
-                echo git 'https://github.com/sega270/newrepoforjava.git'
+                 git branch:'master', url:'https://github.com/sega270/newrepoforjava.git'
             }
         }
     
@@ -24,4 +24,5 @@ pipeline {
       
     }
 }
+
 
