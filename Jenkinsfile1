@@ -12,7 +12,7 @@ pipeline{
         publishHTML([
           allowmissing:true,
           alwaysLinktoLastBuild:false,
-          KeepAll:false,
+          keepAll:false,
           reportDir:'.',
           reportFiles:'new.html',
           reportName:'My HTML PIPE PAGE'
